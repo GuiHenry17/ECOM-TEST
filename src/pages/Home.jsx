@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ListaProdutos from "../components/ListarProdutos";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
     const [produtos, setProdutos] = useState([])
@@ -18,10 +20,14 @@ export default function Home() {
         receberProdutos()
     }, [])
 
-    
+
 
     return (
+        <>
+        <Header/>
         <ListaProdutos lista={produtos} />
+        <Footer/>
+        </>
     )
 
 }

@@ -2,7 +2,10 @@
 import styles from "../styles/listarProdutos.module.css"
 
 export default function ListaProdutos({lista, funcao}){
+
     return (
+        <>
+        <h1 className={styles.title}>Produtos</h1>
         <div className={styles.container}>
             {lista.map((produto) => (
                 <div key={produto.id} className={styles.produtos}>
@@ -11,9 +14,11 @@ export default function ListaProdutos({lista, funcao}){
                     <p>{produto.description}</p>
                     <h4>R${produto.price}</h4>
                     <button onClick={funcao}>Comprar</button>
+                    <img className={styles.fav} src="/heart-regular.svg" onClick={() => "this.src='/heart-solid.svg'"}/>
                 </div>
             ))}
 
         </div>
+        </>
     )
 }
