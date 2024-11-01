@@ -4,11 +4,11 @@ export default function Header(){
     return (
         <div className={styles.header}>
             <div className={styles.container}>
-                <h2>MERCADO GRATIS</h2>
+                <img src='/logo.png' alt="logo"/>
                 <ul>
-                    <li>nav</li>
-                    <li>nav</li>
-                    <li>nav</li>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Carrinho</li>
                 </ul>
             </div>
         </div>

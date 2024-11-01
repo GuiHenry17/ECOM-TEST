@@ -11,7 +11,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     ul{
         display: flex;
@@ -19,7 +19,17 @@
         gap: 10px;
         list-style: none;
     }
+    li:hover{
+        transition: all ease-out 0.4s;
+        cursor: pointer;
+        color: #5598fd;
+    }
     h2{
         padding: 20px;
+    }
+    img{
+        align-items: center;
+        height: 6vh;
+        width: 180px;
     }
 }
