@@ -7,16 +7,21 @@ export default function Carrinho() {
   const [carrinho, setCarrinho] = useState([])  
 
   useEffect(() => {
-    const carrinhoSalvo = localStorage.getItem("carrinho")  
+    const carrinhoSalvo = localStorage.getItem('carrinho')  
     if (carrinhoSalvo) {
       setCarrinho(JSON.parse(carrinhoSalvo))  
     }
   }, [])  
 
   const removerProduto = (id) => {
+    try{
     const novoCarrinho = carrinho.filter((produto) => produto.id !== id)  
     setCarrinho(novoCarrinho)  
-    localStorage.setItem("carrinho", JSON.stringify(novoCarrinho))
+    localStorage.setItem('carrinho', JSON.stringify(novoCarrinho))
+    }catch(error){
+      console.error(error)
+      localStorage.clear()
+    } 
   }  
 
   return (
