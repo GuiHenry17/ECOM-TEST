@@ -4,8 +4,8 @@ body {
   font-family: Roboto;
 }
 
-.title{
-    text-align: center;
+.title {
+  text-align: center;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
   margin-bottom: 150px;
 }
 
-.produtos{
+.produtos {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@ body {
     display: none;
   }
   img {
+    width: 200px;
     height: 250px;
   }
   h2 {
@@ -64,7 +65,7 @@ body {
     background-color: #2968c8;
     cursor: pointer;
   }
-  button:active{
+  button:active {
     background-color: #2256a5;
     transform: scale(1.01);
   }
@@ -75,8 +76,7 @@ body {
   /**/
 }
 
-.produtos:hover{
-    transition: all ease-out 0.4s;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.12);
+.produtos:hover {
+  transition: all ease-out 0.4s;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.12);
 }
-

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import styles from "../styles/listarProdutos.module.css" 
+import styles from "../styles/listarProdutos.module.css"  
 
 export default function ListaProdutos({ lista, funcao }) {
   return (
@@ -17,5 +17,5 @@ export default function ListaProdutos({ lista, funcao }) {
         ))}
       </div>
     </>
-  ) 
+  )  
 }
