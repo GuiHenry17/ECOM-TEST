@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"  
 import { ToastContainer, toast } from "react-toastify"  
 import "react-toastify/dist/ReactToastify.css"  
+import Loading from "../components/Loading"
 
 export default function Home() {
   const [produtos, setProdutos] = useState([])  
@@ -23,7 +24,7 @@ export default function Home() {
       }
     }  
     receberProdutos()  
-  }, [])  
+  }, []) 
 
   const comprar = (produto) => {
     try{

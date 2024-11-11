@@ -11,9 +11,6 @@ export default function Header({ carrinho }) {
         <img src='/logo.png' alt='logo' onClick={() => navigate('/')} style={{cursor: 'pointer' }}/>
         <ul>
           <li onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-            Home
-          </li>
-          <li onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
             Produtos
           </li>
           <li onClick={() => navigate('/carrinho', { state: { carrinho } })} style={{ cursor: 'pointer' }}>

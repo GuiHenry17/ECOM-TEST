@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"  
 import Header from "../components/Header"  
 import Footer from "../components/Footer"  
-import ListarCarrinho from "../components/ListarCarrinho"  
+import ListarCarrinho from "../components/ListarCarrinho"
 
 export default function Carrinho() {
   const [carrinho, setCarrinho] = useState([])  

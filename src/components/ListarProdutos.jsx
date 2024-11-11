@@ -1,10 +1,22 @@
 /* eslint-disable react/prop-types */
-import styles from "../styles/listarProdutos.module.css"  
+import styles from "../styles/listarProdutos.module.css"
+import Loading from "./Loading"
 
 export default function ListaProdutos({ lista, funcao }) {
-  return (
-    <>
+
+  if (lista.length === 0) {
+    return (
+      <>
       <h1 className={styles.title}>Produtos</h1>
+      <Loading/>
+      </>
+    )
+  }
+
+  return (
+    
+    <>
+    <h1 className={styles.title}>Produtos</h1>
       <div className={styles.container}>
         {lista.map((produto) => (
           <div key={produto.id} className={styles.produtos}>
@@ -17,5 +29,6 @@ export default function ListaProdutos({ lista, funcao }) {
         ))}
       </div>
     </>
-  )  
+    
+  )
 }
