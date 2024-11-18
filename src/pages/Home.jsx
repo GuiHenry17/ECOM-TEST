@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 import { ToastContainer, toast } from "react-toastify"  
 import "react-toastify/dist/ReactToastify.css"  
 import Loading from "../components/Loading"
+import Buscar from "../components/Buscar"
 
 export default function Home() {
   const [produtos, setProdutos] = useState([])  
@@ -47,6 +48,7 @@ export default function Home() {
   return (
     <>
       <Header carrinho={carrinho} />
+      <Buscar lista={produtos} setLista={setProdutos}/>
       <ListaProdutos lista={produtos} funcao={comprar} />
       <Footer />
       <ToastContainer />
