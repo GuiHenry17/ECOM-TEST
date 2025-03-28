@@ -1,8 +1,32 @@
-# React + Vite
+# ECOM-TEST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ECOM-TEST** é um projeto pessoal desenvolvido para experimentação e aprendizado no desenvolvimento de aplicações com **React.js** e **Vite**. O objetivo é testar configurações, otimizar o ambiente de desenvolvimento e aplicar boas práticas utilizando ESLint.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js  
+- Vite  
+- JavaScript  
+- HTML  
+- CSS  
+
+## Funcionalidades
+
+- Configuração mínima para projetos React com Vite  
+- Hot Module Replacement (HMR) para desenvolvimento rápido  
+- ESLint configurado para padronização de código  
+
+## Como Executar
+
+1. Clone o repositório:
+  ```sh
+  git clone https://github.com/GuiHenry17/ECOM-TEST.git
+```
+2. Instale as dependências:
+   ```sh
+   npm i
+   ```
+3. Execute o projeto:
+   ```sh
+   npm run dev
+   ```
