@@ -24,9 +24,9 @@
 ```
 2. Instale as dependências:
    ```sh
-   npm i
-   ```
+  npm i
+  ```
 3. Execute o projeto:
    ```sh
-   npm run dev
+  npm run dev
    ```
