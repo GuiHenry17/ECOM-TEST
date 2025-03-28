@@ -19,14 +19,14 @@
 ## Como Executar
 
 1. Clone o repositório:
-  ```sh
-  git clone https://github.com/GuiHenry17/ECOM-TEST.git
-```
+   ```
+   git clone https://github.com/GuiHenry17/ECOM-TEST.git
+   ```
 2. Instale as dependências:
-   ```sh
-  npm i
-  ```
+   ```
+   npm i
+   ```
 3. Execute o projeto:
-   ```sh
-  npm run dev
+   ```
+   npm run dev
    ```
